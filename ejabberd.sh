@@ -69,3 +69,5 @@ ejabberdctl register admin localhost $adminjabberdpasswor
 
 echo "Enter in broser http:// $ipaddr :5280/admin"
 echo "You login: admin You password $adminjabberdpasswor"
+
+/opt/ejabberd-26.03/bin/ejabberdctl registered_users localhost
