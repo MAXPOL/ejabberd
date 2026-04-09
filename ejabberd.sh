@@ -57,15 +57,12 @@ sed -i 's/::/'$ipaddr'/g' /opt/ejabberd/conf/ejabberd.yml
 
 systemctl start ejabberd.service
 
-#firewall-cmd --permanent --new-zone=vpn
-#firewall-cmd --zone=vpn --change-interface=tun0
-#firewall-cmd --permanent --zone=vpn --add-port={5280,5222}/tcp
 firewall-cmd --permanent --zone=public --add-port={5280,5222}/tcp
 firewall-cmd --reload
 
 export PATH=$PATH:/opt/ejabberd-26.03/bin/
-#ejabberdctl register admin ejabberdexample.com $adminjabberdpasswor
-ejabberdctl register admin localhost $adminjabberdpasswor
+
+/opt/ejabberd-26.03/bin/ejabberdctl register admin localhost $adminjabberdpasswor
 
 echo "Enter in broser http:// $ipaddr :5280/admin"
 echo "You login: admin You password $adminjabberdpasswor"
