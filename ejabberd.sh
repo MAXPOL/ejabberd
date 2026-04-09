@@ -39,7 +39,7 @@ chmod +x ejabberd-26.03-1-linux-x64.run
 mysql -u root -p$passworddb -e "CREATE DATABASE ejabberd;"
 mysql -u root -p$passworddb -e "GRANT ALL ON ejabberd.* TO 'ejabberd'@'localhost' IDENTIFIED BY '$jabberdpassworddb';"
 mysql -u root -p$passworddb -e "FLUSH PRIVILEGES;"
-mysqldump -u root -p$passworddb ejabberd < /opt/ejabberd-26.03/lib/ejabberd-26.03/priv/sql/mysql.sql
+mysqldump -u root -p$passworddb ejabberd < /opt/ejabberd-26.03/lib/ejabberd-26.3.0/priv/sql/mysql.sql
 
 cat >> /opt/ejabberd/conf/ejabberd.yml <<EOF
 sql_type: mysql
