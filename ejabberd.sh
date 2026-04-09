@@ -15,7 +15,7 @@ read adminjabberdpassword
 systemctl enable firewalld
 systemctl start firewalld
 
-yum install -y wget nano mariadb-server glibc
+yum install -y wget nano mariadb mariadb-client mariadb-server glibc
 
 systemctl enable mariadb.service
 systemctl start mariadb.service
