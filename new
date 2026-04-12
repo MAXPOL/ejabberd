@@ -92,11 +92,6 @@ firewall-cmd --reload
 
 export PATH=$PATH:/opt/ejabberd-26.03/bin/
 
-sleep 5
-/opt/ejabberd-26.03/bin/ejabberdctl register admin $domain $adminjabberdpassword
-
 echo "=========================================="
 echo "Ready! Open browser: http://$ipaddr:5280/admin"
-echo "Login: admin@$domain"
-echo "Password: $adminjabberdpassword"
 echo "=========================================="
