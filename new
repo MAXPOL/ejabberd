@@ -48,7 +48,7 @@ mysql -u root -p$passworddb -e "FLUSH PRIVILEGES;"
 mysql -u root -p$passworddb ejabberd < /opt/ejabberd-26.03/lib/ejabberd-26.3.0/priv/sql/mysql.sql
 
 # Простая конфигурация без шифрования
-cat >> /opt/ejabberd/conf/ejabberd.yml <<EOF
+cat > /opt/ejabberd/conf/ejabberd.yml <<EOF
 
 hosts:
   - "$domain"
