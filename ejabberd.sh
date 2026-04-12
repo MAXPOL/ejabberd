@@ -98,3 +98,5 @@ export PATH=$PATH:/opt/ejabberd-26.03/bin/
 echo "=========================================="
 echo "Ready! Open browser: http://$ipaddr:5280/admin"
 echo "=========================================="
+
+systemctl restart ejabberd
