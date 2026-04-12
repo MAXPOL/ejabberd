@@ -7,4 +7,4 @@
 Be sure to add the first user, admin, with your domain. 
 For example: /opt/ejabberd-26.03/bin/ejabberdctl register admin test.com qwerty
 
-Reccomend use client: Gajim
+Recommend use client: Gajim
