@@ -4,4 +4,5 @@
 
 /opt/ejabberd-26.03/bin/ejabberdctl register USER DOMAIN PASSWORD # add new user
 
-Be sure to add the first user, admin, with your domain. For example, admin@test.com
+Be sure to add the first user, admin, with your domain. 
+For example: /opt/ejabberd-26.03/bin/ejabberdctl register admin test.com qwerty
