@@ -20,7 +20,7 @@ sql_type: mysql
 sql_server: "localhost"
 sql_database: "ejabberd"
 sql_username: "ejabberd"
-sql_password: "$jabberdpassworddb"
+sql_password: "pass"
 
 acl:
   admin:
