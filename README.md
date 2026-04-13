@@ -9,4 +9,12 @@ Web-interface: http://domain:5280/admin
 Be sure to add the first user, admin, with your domain. 
 For example: /opt/ejabberd-26.03/bin/ejabberdctl register admin test.com qwerty
 
-Recommend use client: Gajim
+Recommend use client: Pigin or mybe Gajim.
+
+If you want use cryptography, create cert and change confi file: 
+
+openssl req -new -newkey rsa:4096 -days 365 -nodes -x509 -subj "/CN=test.com" -keyout /opt/ejabberd/conf/certs/privkey.pem -out /opt/ejabberd/conf/certs/fullchain.pem
+
+cat /opt/ejabberd/conf/certs/fullchain.pem /opt/ejabberd/conf/certs/privkey.pem > /opt/ejabberd/conf/certs/ejabberd.pem
+
+Change in ejabberd.yml: "starttls: false" on  "starttls: true"
