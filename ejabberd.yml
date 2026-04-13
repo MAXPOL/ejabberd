@@ -1,0 +1,34 @@
+loglevel: 4
+
+hosts:
+  - "test.com"
+
+#certfiles:
+#  - /opt/ejabberd/conf/certs/ejabberd.pem
+  
+listen:
+  - port: 5222
+    module: ejabberd_c2s
+    starttls: false # or true
+    starttls_required: false
+  - port: 5280
+    module: ejabberd_http
+    web_admin: true
+
+auth_method: sql
+sql_type: mysql
+sql_server: "localhost"
+sql_database: "ejabberd"
+sql_username: "ejabberd"
+sql_password: "$jabberdpassworddb"
+
+acl:
+  admin:
+    user:
+      - "admin@test.com"
+
+access_rules:
+  admin:
+    allow: admin
+  register:
+    allow: all
