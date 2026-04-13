@@ -18,3 +18,9 @@ openssl req -new -newkey rsa:4096 -days 365 -nodes -x509 -subj "/CN=test.com" -k
 cat /opt/ejabberd/conf/certs/fullchain.pem /opt/ejabberd/conf/certs/privkey.pem > /opt/ejabberd/conf/certs/ejabberd.pem
 
 Change in ejabberd.yml: "starttls: false" on  "starttls: true"
+
+After the "hosts" block add:
+
+certfiles:
+
+  - /opt/ejabberd/conf/certs/ejabberd.pem
