@@ -9,7 +9,7 @@ Web-interface: http://you_domain:5280/admin
 Be sure to add the first user, admin, with your domain. 
 For example: /opt/ejabberd-26.03/bin/ejabberdctl register admin test.com qwerty
 
-Recommend use client: Pigin or mybe Gajim.
+Recommend use client: Pidgin or maybe Gajim.
 
 If you want use cryptography mode, create cert and change config file: 
 
