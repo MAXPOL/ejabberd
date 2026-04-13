@@ -11,7 +11,7 @@ For example: /opt/ejabberd-26.03/bin/ejabberdctl register admin test.com qwerty
 
 Recommend use client: Pigin or mybe Gajim.
 
-If you want use cryptography, create cert and change confi file: 
+If you want use cryptography mode, create cert and change config file: 
 
 openssl req -new -newkey rsa:4096 -days 365 -nodes -x509 -subj "/CN=test.com" -keyout /opt/ejabberd/conf/certs/privkey.pem -out /opt/ejabberd/conf/certs/fullchain.pem
 
