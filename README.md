@@ -1,6 +1,6 @@
 # ejabberd
 
-Web-interface: http://domain:5280/admin
+Web-interface: http://you_domain:5280/admin
 
 /opt/ejabberd-26.03/bin/ejabberdctl registered_users YOU_DOMAIN # checking domain existence
 
